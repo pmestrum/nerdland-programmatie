@@ -1,0 +1,11 @@
+{
+  "/api": {
+    "target": "https://www.nerdlandfestival.be",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": "",
+      "^/swagger": ""
+    }
+  }
+}

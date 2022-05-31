@@ -10,9 +10,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { DetailCellRenderer } from './detail-cell-renderer';
 import { BooleanCellRenderer } from './boolean-cell-renderer';
 import { FavoriteCellRenderer } from './favorite-cell-renderer';
-
-import { AgGridModule } from 'ag-grid-angular';
-// import 'ag-grid-enterprise'; // enable if you want enterprise features. for development and learning purposes only
+import { AgGridImportModule } from './ag-grid-import.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +24,7 @@ import { AgGridModule } from 'ag-grid-angular';
     HttpClientModule,
     MatTableModule,
     BrowserAnimationsModule,
-    AgGridModule,
+    AgGridImportModule,
     FontAwesomeModule,
   ],
   providers: [],

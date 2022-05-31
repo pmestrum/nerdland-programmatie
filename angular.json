@@ -54,6 +54,19 @@
               ],
               "outputHashing": "all"
             },
+            "enterprise": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.enterprise.ts"
+                },
+                {
+                  "replace": "src/app/ag-grid-import.module.ts",
+                  "with": "src/app/ag-grid-enterprise-import.module.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,

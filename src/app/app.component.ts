@@ -20,15 +20,15 @@ export class AppComponent {
   gridOptions: GridOptions = {
     rowGroupPanelShow: 'always',
     columnDefs:  [
+      { field: 'favorite', cellRenderer: FavoriteCellRenderer, onCellClicked: (event: CellClickedEvent) => this.toggleFavorite(event) },
       { field: 'title', cellRenderer: 'agGroupCellRenderer' },
       { field: 'type', filter: 'agSetColumnFilter', enableRowGroup: true },
+      { field: 'when' },
       { field: 'tent', filter: 'agSetColumnFilter', enableRowGroup: true },
+      { field: 'forWho', headerName: 'Age' },
       { field: 'friday', cellRenderer: BooleanCellRenderer, headerName: 'FR' },
       { field: 'saturday', cellRenderer: BooleanCellRenderer, headerName: 'SA' },
       { field: 'sunday', cellRenderer: BooleanCellRenderer, headerName: 'SU' },
-      { field: 'when' },
-      { field: 'forWho', headerName: 'Age' },
-      { field: 'favorite', cellRenderer: FavoriteCellRenderer, onCellClicked: (event: CellClickedEvent) => this.toggleFavorite(event) },
     ],
   }
 

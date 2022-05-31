@@ -20,7 +20,7 @@ export class AppComponent {
   gridOptions: GridOptions = {
     rowGroupPanelShow: 'always',
     columnDefs:  [
-      { field: 'favorite', cellRenderer: FavoriteCellRenderer, onCellClicked: (event: CellClickedEvent) => this.toggleFavorite(event) },
+      { field: 'favorite', cellRenderer: FavoriteCellRenderer, onCellClicked: (event: CellClickedEvent) => this.toggleFavorite(event), headerName: '' },
       { field: 'title', cellRenderer: 'agGroupCellRenderer' },
       { field: 'type', filter: 'agSetColumnFilter', enableRowGroup: true },
       { field: 'when' },
